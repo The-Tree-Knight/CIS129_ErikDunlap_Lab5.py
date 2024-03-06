@@ -1,0 +1,64 @@
+#Erik Dunlap
+#CIS129
+#Creating a looping structures for a store
+
+#totalBottles= 0
+#counter= 0
+#todayBottles= 0
+#totalPayout= 0
+#keepGoing= y
+
+#While keepGoing= y
+# code to set value of variable totalBottles
+# code to set value of totalPayout
+# code to print number of total bottles and total payout
+# Display "Do you want to enter another week's worth of data?
+# Display "(Enter y or n)"
+# Input keepGoing
+#End While
+
+#NBR_OF_DAYS= 7
+#totalBottles= 0
+#todayBottles= 0
+#counter= 0
+#While counter <= NBR_OF_DAYS
+# Display "Enter number of bottles returned for day #",
+#          counter, ":"
+# Input todayBottles
+# todayBottles + totalBottles = totalBottles
+# counter + 1 = counter
+
+#PAYOUT_PER_BOTTLE = .10
+#totalPayout = 0
+#totalPayout= PAYOUT_PER_BOTTLE * totalBottles
+
+#Display "Payout is {totalPayout}"
+#Displat "Total bottles is {totalBottles}"
+
+#################################Actual Code####################################
+
+total_bottles= 0
+counter= 1
+today_bottles= 0
+total_payout= 0
+keep_going= 'y'
+days_per_week= 7
+
+while keep_going== 'y':
+    total_bottles= 0
+    counter= 1
+    today_bottles= 0
+    total_payout= 0
+    while counter <= days_per_week:
+        today_bottles= int(input(f'Enter number of bottles for day #{counter}: '))
+        total_bottles += today_bottles
+        counter += 1
+    total_payout= total_bottles*0.1
+    print(f'\nThe total number of bottles collected is {total_bottles}')
+    print(f'The total paid out is $ {total_payout:.1f}')
+    print('\nDo you want to enter another week\'s worth of data?')
+    keep_going= input('(Enter y or n): ')
+    if keep_going== 'y':
+        print('')
+    #Just to make it look the exact same as the lab
+
