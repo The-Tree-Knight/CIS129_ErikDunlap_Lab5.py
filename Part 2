@@ -44,6 +44,8 @@ total_payout= 0
 keep_going= 'y'
 days_per_week= 7
 
+#Declaring variables (most are unneccesary right now)
+
 while keep_going== 'y':
     total_bottles= 0
     counter= 1
