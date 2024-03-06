@@ -1,0 +1,19 @@
+#Erik Dunlap
+#CIS129
+#Creating lopping structures
+
+monthlySales= 0
+storeAmount= 0
+empAmount= 0
+salesIncrease= 0
+keepGoing= 'y'
+#Declare Local Variables
+
+while keepGoing == 'y':
+    monthlySales= float(input('What are the monthly sales in $?\n'))
+    salesIncrease= float(input('How much has the sales increase in %?\n'))
+    storeBonus= (monthlySales**salesIncrease)*0
+    empBonus= monthlySales*empAmount
+    print(f'Your store bonus is {storeBonus:>6.2f}$\nYour employee bonus is {empBonus:>6.2f}$\
+\n Try Harder')
+    keepGoing= input('Do you want to run the program again? (Enter y for yes).\n')
